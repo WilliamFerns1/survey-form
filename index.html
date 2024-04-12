@@ -2,28 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Web Page</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1 id="title">social.bot Newsletter</h1>
-    <p id="description">
-      Join our newsletter, where we will give you updates a few times a week, on
-      our new features and automations
-    </p>
-    <form id="survey-form">
-      <fieldset>
-        <legend>Basic Info:</legend>
-        <label for="name"
-          >Name: <input name="name" type="text" id="name"
-        /></label>
-        <label for="email"
-          >Email: <input name="email" type="text" id="email"
-        /></label>
-        <label for="age"
-          >mail: <input name="age" type="number" id="age"
-        /></label>
-      </fieldset>
-    </form>
+    <main>
+      <div id="top">
+        <h1 id="title">Automa Newsletter</h1>
+        <p id="description">
+          Join our newsletter, where we will give you updates a few times a week, on
+          our new features and automations
+        </p>
+      </div>
+      <form action="https://automa-domain.com/newsletter" method="POST" id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name <input required placeholder="name here..." name="name" type="text" id="name" /></label>
+          <label for="email" id="email-label"
+            >Emai: <input required name="email" placeholder="email here..." type="text" id="email" /></label>
+          <label for="age" id="number-label"
+            >Age (optional) <input required name="age" min="5" placeholder="age here..." max="120" type="number" id="number" /></label>
+          <label for="dropdown">How often do you want to receive emails?
+            <select id="dropdown">
+              <option value="">
+                (select one)
+              </option>
+              <option value="1">
+                once a day
+              </option>
+              <option value="2">
+                two times a week
+              </option>
+              <option value="3">
+                once a week
+              </option>
+              <option value="4">
+                once a month
+              </option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="radio-label" id="label-gender-male" for="gender-male"><input checked type="radio" name="gender" id="gender-male" /> Male</label>
+          <label class="radio-label" id="label-gender-female" for="gender-female"><input type="radio" name="gender" id="gender-female" /> Female</label>
+          <label class="radio-label" id="label-gender-unknown" for="gender-rather-not-say"><input type="radio" name="gender" id="gender-rather-not-say" /> Rather not say</label>
+        </fieldset>
+        <fieldset>
+          <label for="youtube-automation"><input type="checkbox" name="interest" id="youtube-automation" /> Youtube Automation</label>
+          <label for="instagram-automation"><input type="checkbox" name="interest" id="instagram-automation" /> Instagram Automation</label>
+          <label for="tiktok-automation"><input type="checkbox" name="interest" id="tiktok-automation" /> Tiktok Automation</label>
+          <label for="ai"><input type="checkbox" name="interest" id="ai" /> AI</label>
+          <label for="software-development"><input type="checkbox" name="interest" id="ai" /> Software Development</label>
+        </fieldset>
+        <fieldset>
+          <label id="bio-label" for="bio">Provide a bio: 
+            <textarea placeholder="I am a content creator, and I am really interesed in AI, Software Development, Automation, and I enjoy playing..." id="bio" name="bio">
+            </textarea>
+          </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>

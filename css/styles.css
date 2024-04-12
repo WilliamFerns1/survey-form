@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+main {
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#top {
+  padding: 20px;
+}
+
+#description {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+fieldset {
+  padding: 10px 15px;
+  border: 0px;
+}
+
+fieldset input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+h1, p, label {
+  text-align: center;
+}
+
+input[type="radio"] {
+  width: unset;
+}
