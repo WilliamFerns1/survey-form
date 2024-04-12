@@ -6,10 +6,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
-  background-color: #f2f2f2;
   padding: 20px 0;
+  background: url(https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /* url(https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -20,6 +23,10 @@ main {
 
 h1, p, label {
   text-align: center;
+}
+
+label {
+  font-weight: 500;
 }
 
 #top {
@@ -33,8 +40,8 @@ h1, p, label {
 }
 
 form {
-
   background-color: #fff;
+  border: 2px solid black;
   padding: 20px;
   border-radius: 10px;
 }
@@ -45,27 +52,50 @@ fieldset {
   border: 0px;
 }
 
-fieldset input, select {
+fieldset input, select, textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0px;
   margin-bottom: 25px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .inline {
   display: inline-block;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   margin: 0;
   padding: 0;
   width: unset;
 }
 
-.radio-label {
+.radio-label, .checkbox-label {
   margin-bottom: 5px;
   display: block;
   text-align: left;
 }
+
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.submit-button {
+  background-color: rgba(0, 50, 200, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: 0px;
+  display: block;
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+

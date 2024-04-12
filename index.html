@@ -20,7 +20,7 @@
           <label for="name" id="name-label"
             >Name <input required placeholder="name here..." name="name" type="text" id="name" /></label>
           <label for="email" id="email-label"
-            >Emai: <input required name="email" placeholder="email here..." type="text" id="email" /></label>
+            >Email: <input required name="email" placeholder="email here..." type="text" id="email" /></label>
           <label for="age" id="number-label"
             >Age (optional) <input required name="age" min="5" placeholder="age here..." max="120" type="number" id="number" /></label>
           <label for="dropdown">How often do you want to receive emails?
@@ -44,24 +44,26 @@
           </label>
         </fieldset>
         <fieldset>
+          <legend>Gender</legend>
           <label class="radio-label" id="label-gender-male" for="gender-male"><input checked class="inline" type="radio" name="gender" id="gender-male" /> Male</label>
           <label class="radio-label" id="label-gender-female" for="gender-female"><input class="inline" type="radio" name="gender" id="gender-female" /> Female</label>
           <label class="inline" class="radio-label" id="label-gender-unknown" for="gender-rather-not-say"><input type="radio" name="gender" id="gender-rather-not-say" /> Rather not say</label>
         </fieldset>
         <fieldset>
-          <label for="youtube-automation"><input type="checkbox" name="interest" id="youtube-automation" /> Youtube Automation</label>
-          <label for="instagram-automation"><input type="checkbox" name="interest" id="instagram-automation" /> Instagram Automation</label>
-          <label for="tiktok-automation"><input type="checkbox" name="interest" id="tiktok-automation" /> Tiktok Automation</label>
-          <label for="ai"><input type="checkbox" name="interest" id="ai" /> AI</label>
+          <legend>What are you interested in?</legend>
+          <label class="checkbox-label" for="youtube-automation"><input class="inline" type="checkbox" name="interest" id="youtube-automation" /> Youtube Automation</label>
+          <label class="checkbox-label" for="instagram-automation"><input class="inline" type="checkbox" name="interest" id="instagram-automation" /> Instagram Automation</label>
+          <label class="checkbox-label" for="tiktok-automation"><input class="inline" type="checkbox" name="interest" id="tiktok-automation" /> Tiktok Automation</label>
+          <label class="checkbox-label" for="ai"><input type="checkbox" name="interest" id="ai" /> AI</label>
           <label for="software-development"><input type="checkbox" name="interest" id="ai" /> Software Development</label>
         </fieldset>
         <fieldset>
           <label id="bio-label" for="bio">Provide a bio: 
-            <textarea placeholder="I am a content creator, and I am really interesed in AI, Software Development, Automation, and I enjoy playing..." id="bio" name="bio">
+            <textarea rows="5" placeholder="I am a content creator, and I am really interesed in AI, Software Development, Automation, and I enjoy playing..." id="bio" name="bio">
             </textarea>
           </label>
         </fieldset>
-        <button id="submit">Submit</button>
+        <button class="submit-button" id="submit">Submit</button>
       </form>
     </main>
   </body>
