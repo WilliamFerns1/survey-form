@@ -18,6 +18,10 @@ main {
   margin: 0 auto;
 }
 
+h1, p, label {
+  text-align: center;
+}
+
 #top {
   padding: 20px;
 }
@@ -29,7 +33,7 @@ main {
 }
 
 form {
-  margin: 0 auto;
+
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -54,10 +58,14 @@ fieldset input, select {
   display: inline-block;
 }
 
-h1, p, label {
-  text-align: center;
+input[type="radio"] {
+  margin: 0;
+  padding: 0;
+  width: unset;
 }
 
-input[type="radio"] {
-  width: unset;
+.radio-label {
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
 }
